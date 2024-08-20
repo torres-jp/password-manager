@@ -7,11 +7,12 @@ import {
 } from "@/components/ui/accordion";
 import { BarChart, DoorClosed, House, RectangleEllipsis } from "lucide-react";
 import Link from "next/link";
+import SingleItem from "../SingleItem/SingleItem";
 
 export default function SidebarRoutes() {
   return (
     <div>
-      <Link href="/">HomePage</Link>
+      <SingleItem href="/" label="Homepage" icon={House} />
     </div>
   );
 }
