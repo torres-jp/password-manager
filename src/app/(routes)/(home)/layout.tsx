@@ -1,5 +1,6 @@
 import Logo from "@/components/Shared/Logo/Logo";
 import Sidebar from "@/components/Shared/Sidebar/Sidebar";
+import { SideBarMobile } from "@/components/Shared/SideBarMobile";
 
 export default function layout({
   children,
@@ -10,7 +11,7 @@ export default function layout({
         <div className="py-1 text-white">
           <Logo />
         </div>
-        <div>SideMobile</div>
+        <SideBarMobile />
       </div>
       <div className="flex h-full">
         <div className="max-w-lg hidden lg:flex h-full w-72 flex-col bg-blue-800 fixed px-4 text-white">
@@ -23,3 +24,4 @@ export default function layout({
     </main>
   );
 }
+ 
